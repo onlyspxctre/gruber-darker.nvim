@@ -30,8 +30,8 @@ local function create_autocmds()
 
 	-- This is a mitigation for new Nvim v0.9.0 lsp semantic highlights
 	-- overriding treesitter highlights.
-  -- TODO: link these to relevant treesitter groups in the future.
-  -- See :h lsp-semantic-highlight
+	-- TODO: link these to relevant treesitter groups in the future.
+	-- See :h lsp-semantic-highlight
 	vim.api.nvim_create_autocmd("ColorScheme", {
 		group = gruber_darker_group,
 		pattern = "*",

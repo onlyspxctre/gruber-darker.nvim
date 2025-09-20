@@ -11,6 +11,7 @@
 
 ---@class GruberDarkerOpts
 ---@field bold boolean
+---@field cursor boolean
 ---@field invert table<InvertType, boolean>
 ---@field italic table<ItalicType, boolean>
 ---@field undercurl boolean
@@ -19,6 +20,7 @@
 ---@type GruberDarkerOpts
 local DEFAULTS = {
 	bold = true,
+	cursor = false,
 	invert = {
 		signs = false,
 		tabline = false,

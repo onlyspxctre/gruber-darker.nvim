@@ -20,7 +20,9 @@ function M.setup()
 	for _, provider in ipairs(providers) do
 		provider:setup()
 	end
-	vim.opt.guicursor:append("a:Cursor/lCursor")
+	if require("gruber-darker.config").get_opts().cursor then
+		vim.opt.guicursor:append("n-v:Cursor/lCursor")
+	end
 end
 
 return M
