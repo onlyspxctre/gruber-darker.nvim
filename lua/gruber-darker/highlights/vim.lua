@@ -252,4 +252,10 @@ M.highlights.md_bold = Highlight.new("markdownBold", { link = gruber_hl.yellow_b
 M.highlights.md_code_delim = Highlight.new("markdownCodeDelimiter", { fg = c.brown, italic = true })
 M.highlights.md_error = Highlight.new("markdownError", { fg = c.fg, bg = c["bg+1"] })
 
+-- LaTeX
+M.highlights.tex_statement = Highlight.new("texStatement", { link = gruber_hl.yellow_bold })
+M.highlights.tex_doc_type = Highlight.new("texDocType", { link = gruber_hl.yellow_bold })
+M.highlights.tex_new_cmd = Highlight.new("texNewCmd", { link = gruber_hl.yellow_bold })
+M.highlights.tex_cmd_name = Highlight.new("texCmdName", { link = gruber_hl.yellow_bold })
+
 return M
